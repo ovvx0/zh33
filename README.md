@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
@@ -82,7 +82,7 @@
   <div class="button-container">
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">حزمة المواطنين</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">✨>حزمة المواطنين</button>
       <div class="dropdown-content">
         <a href="#">مركبه 70 جمليه و حصريه</a>
         <a href="#">امتلاك فوري</a>
@@ -118,7 +118,7 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">💥〢𝟒-𝐱-𝟒・حزمة</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)"> مع تحيات A-9  💥〢𝟒-𝐱-𝟒・حزمة</button>
       <div class="dropdown-content">
         <a href="#">اسم على مسمى مركبات فاخره فرود</a>
         <a href="#">مربكات ذات اصوات و قوه جمال فاخر</a>
