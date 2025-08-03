@@ -54,15 +54,17 @@
       border-radius: 6px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       z-index: 1;
-      text-align: left;
+      text-align: center;
       left: 0;
     }
 
     .dropdown-content a {
       color: #ffffff;
-      padding: 12px 16px;
+      padding: 14px;
       text-decoration: none;
       display: block;
+      font-weight: bold;
+      font-size: 16px;
       transition: background-color 0.2s ease;
     }
 
@@ -84,45 +86,35 @@
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleDropdown(this)">📸 Instagram</button>
       <div class="dropdown-content">
-        <a href="https://instagram.com/yourpage" target="_blank">Visit Profile</a>
-        <a href="#">Send DM</a>
-        <a href="#">View Highlights</a>
+        <a href="https://instagram.com/z.h3rr" target="_blank">@z.h3rr</a>
       </div>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleDropdown(this)">👻 Snapchat</button>
       <div class="dropdown-content">
-        <a href="https://snapchat.com/add/yourusername" target="_blank">Add on Snapchat</a>
-        <a href="#">Snapcode</a>
-        <a href="#">Chat Now</a>
+        <a href="https://snapchat.com/add/z.h3r" target="_blank">@z.h3r</a>
       </div>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleDropdown(this)">💬 WhatsApp</button>
       <div class="dropdown-content">
-        <a href="https://wa.me/1234567890" target="_blank">Chat on WhatsApp</a>
-        <a href="#">Send Location</a>
-        <a href="#">Call Now</a>
+        <a href="https://wa.me/966XXXXXXXXX" target="_blank">WhatsApp Me</a>
       </div>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleDropdown(this)">📨 Telegram</button>
       <div class="dropdown-content">
-        <a href="https://t.me/yourchannel" target="_blank">Join Channel</a>
-        <a href="#">Send Message</a>
-        <a href="#">Group Link</a>
+        <a href="https://t.me/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
     </div>
 
     <div class="dropdown">
       <button class="dropbtn" onclick="toggleDropdown(this)">🐦 Twitter</button>
       <div class="dropdown-content">
-        <a href="https://twitter.com/yourusername" target="_blank">Visit Profile</a>
-        <a href="#">Send DM</a>
-        <a href="#">Follow Us</a>
+        <a href="https://twitter.com/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
     </div>
 
