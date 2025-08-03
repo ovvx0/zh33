@@ -77,7 +77,7 @@
 </head>
 <body>
 
-  <h1>اT1 اهلا بك في </h1>
+  <h1>T1 اهلا بك في </h1>
 
   <div class="button-container">
 
