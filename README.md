@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
@@ -54,8 +54,8 @@
       border-radius: 6px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       z-index: 1;
-      text-align: right;
-      right: 0;
+      text-align: left;
+      left: 0;
     }
 
     .dropdown-content a {
@@ -77,52 +77,52 @@
 </head>
 <body>
 
-  <h1>T1 اهلا بك في </h1>
+  <h1>Welcome to T1 Store</h1>
 
   <div class="button-container">
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">✨>حزمة المواطنين</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">📸 Instagram</button>
       <div class="dropdown-content">
-        <a href="#">مركبه 70 جمليه و حصريه</a>
-        <a href="#">امتلاك فوري</a>
-        <a href="#">عرض خاص 99 ريال</a>
+        <a href="https://instagram.com/yourpage" target="_blank">Visit Profile</a>
+        <a href="#">Send DM</a>
+        <a href="#">View Highlights</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">🔱〢𝐆𝐨𝐥𝐝・حزمة</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">👻 Snapchat</button>
       <div class="dropdown-content">
-        <a href="#">90 مركبه</a>
-        <a href="#">تميز بالتعديلات و الاكسترا</a>
-        <a href="#">عرض خاص 124</a>
+        <a href="https://snapchat.com/add/yourusername" target="_blank">Add on Snapchat</a>
+        <a href="#">Snapcode</a>
+        <a href="#">Chat Now</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">💎〢𝐕𝐈𝐏・حزمة</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">💬 WhatsApp</button>
       <div class="dropdown-content">
-        <a href="#">110 مركبه</a>
-        <a href="#">سرعه و تميز و اكسترا فاخر</a>
-        <a href="#">عرض خاص 149</a>
+        <a href="https://wa.me/1234567890" target="_blank">Chat on WhatsApp</a>
+        <a href="#">Send Location</a>
+        <a href="#">Call Now</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">🧨〢للــتــهريــب・𝐓𝟏・حــزمــة</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">📨 Telegram</button>
       <div class="dropdown-content">
-        <a href="#">مركبات تهريب مميزه</a>
-        <a href="#">اكسترا فاخر + بضايع تهريب + مركبات خاصه بالحزمه</a>
-        <a href="#">عرض خاص 199</a>
+        <a href="https://t.me/yourchannel" target="_blank">Join Channel</a>
+        <a href="#">Send Message</a>
+        <a href="#">Group Link</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">  A-9 مع تحيات  💥〢𝟒-𝐱-𝟒・حزمة</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">🐦 Twitter</button>
       <div class="dropdown-content">
-        <a href="#">اسم على مسمى مركبات فاخره فرود</a>
-        <a href="#">مربكات ذات اصوات و قوه جمال فاخر</a>
-        <a href="#">عرض خاص 199</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Visit Profile</a>
+        <a href="#">Send DM</a>
+        <a href="#">Follow Us</a>
       </div>
     </div>
 
@@ -130,19 +130,16 @@
 
   <script>
     function toggleDropdown(button) {
-      // إغلاق أي قائمة مفتوحة ما عدا القائمة المرتبطة بالزر الحالي
       document.querySelectorAll('.dropdown-content').forEach(drop => {
         if (drop !== button.nextElementSibling) {
           drop.classList.remove('show');
         }
       });
 
-      // تبديل إظهار القائمة الحالية
       const dropdown = button.nextElementSibling;
       dropdown.classList.toggle('show');
     }
 
-    // إغلاق القوائم عند الضغط خارجها
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
         document.querySelectorAll('.dropdown-content').forEach(drop => {
