@@ -21,8 +21,8 @@
 
     .button-container {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       gap: 20px;
     }
 
@@ -39,6 +39,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      width: 220px;
     }
 
     .instagram { background-color: #e1306c; }
@@ -66,6 +67,9 @@
       z-index: 1;
       text-align: center;
       left: 0;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
     .dropdown-content a {
@@ -84,12 +88,17 @@
 
     .show {
       display: block;
+      opacity: 1 !important;
+      transform: translateY(0) !important;
     }
   </style>
 </head>
 <body>
 
   <h1>أهلاً فانزاتي 💜</h1>
+
+  <!-- مشغل الصوت -->
+  <audio id="clickSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_f7c8d1b66b.mp3" preload="auto"></audio>
 
   <div class="button-container">
 
@@ -131,7 +140,14 @@
   </div>
 
   <script>
+    const sound = document.getElementById("clickSound");
+
     function toggleDropdown(button) {
+      // تشغيل الصوت
+      sound.currentTime = 0;
+      sound.play();
+
+      // إغلاق باقي القوائم
       document.querySelectorAll('.dropdown-content').forEach(drop => {
         if (drop !== button.nextElementSibling) {
           drop.classList.remove('show');
@@ -139,9 +155,18 @@
       });
 
       const dropdown = button.nextElementSibling;
-      dropdown.classList.toggle('show');
+
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      } else {
+        dropdown.style.display = 'block';
+        setTimeout(() => {
+          dropdown.classList.add('show');
+        }, 10);
+      }
     }
 
+    // إغلاق القوائم إذا ضغطت برا
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
         document.querySelectorAll('.dropdown-content').forEach(drop => {
