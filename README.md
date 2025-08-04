@@ -121,12 +121,12 @@
 <body>
 
   <!-- شاشة ترحيب -->
-  <div id="intro">أهلاً فانزاتي 💜</div>
+  <div id="intro">أهلاً فانزاتي </div>
 
   <!-- صوت الضغط -->
   <audio id="clickSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_f7c8d1b66b.mp3" preload="auto"></audio>
 
-  <h1>أهلاً فانزاتي 💜</h1>
+ <h1>🎈أهلاً فانزاتي🎈</h1>
 
   <div class="button-container">
 
