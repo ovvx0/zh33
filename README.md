@@ -98,14 +98,14 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">💬 WhatsApp</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)"> لا يوجد قاىمه >
       <div class="dropdown-content">
         <a href="https://wa.me/966XXXXXXXXX" target="_blank">WhatsApp Me</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">📨 Telegram</button>
+      <button class="dropbtn" onclick="toggleDropdown(this)">لا يوجد قاىمه>
       <div class="dropdown-content">
         <a href="https://t.me/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
