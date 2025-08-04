@@ -32,7 +32,6 @@
     }
 
     .dropbtn {
-      background-color: #6200ee;
       color: white;
       padding: 14px 20px;
       font-size: 16px;
@@ -42,9 +41,20 @@
       transition: background-color 0.3s ease;
     }
 
-    .dropbtn:hover {
-      background-color: #3700b3;
-    }
+    .instagram { background-color: #e1306c; }
+    .instagram:hover { background-color: #c92a5e; }
+
+    .snapchat { background-color: #fffc00; color: #000; }
+    .snapchat:hover { background-color: #e6e200; }
+
+    .whatsapp { background-color: #25d366; }
+    .whatsapp:hover { background-color: #1da851; }
+
+    .telegram { background-color: #0088cc; }
+    .telegram:hover { background-color: #007ab8; }
+
+    .twitter { background-color: #14171a; }
+    .twitter:hover { background-color: #000000; }
 
     .dropdown-content {
       display: none;
@@ -79,40 +89,40 @@
 </head>
 <body>
 
-  <h1>اهلا فانزاتي</h1>
+  <h1>أهلاً فانزاتي 💜</h1>
 
   <div class="button-container">
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">📸 Instagram</button>
+      <button class="dropbtn instagram" onclick="toggleDropdown(this)">📸 Instagram</button>
       <div class="dropdown-content">
         <a href="https://instagram.com/z.h3rr" target="_blank">@z.h3rr</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">👻 Snapchat</button>
+      <button class="dropbtn snapchat" onclick="toggleDropdown(this)">👻 Snapchat</button>
       <div class="dropdown-content">
         <a href="https://snapchat.com/add/z.h3r" target="_blank">@z.h3r</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)"> لا يوجد قاىمه >
+      <button class="dropbtn whatsapp" onclick="toggleDropdown(this)">📱 WhatsApp</button>
       <div class="dropdown-content">
-        <a href="https://wa.me/966XXXXXXXXX" target="_blank">WhatsApp Me</a>
+        <a href="https://wa.me/966XXXXXXXXX" target="_blank">راسلني على واتساب</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">لا يوجد قاىمه>
+      <button class="dropbtn telegram" onclick="toggleDropdown(this)">📨 Telegram</button>
       <div class="dropdown-content">
         <a href="https://t.me/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn" onclick="toggleDropdown(this)">🐦 Twitter</button>
+      <button class="dropbtn twitter" onclick="toggleDropdown(this)">🐦 Twitter</button>
       <div class="dropdown-content">
         <a href="https://twitter.com/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
@@ -143,3 +153,4 @@
 
 </body>
 </html>
+
