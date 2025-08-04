@@ -167,39 +167,84 @@
 
   </div>
 
-  <script>
-    const sound = document.getElementById("clickSound");
+ <script>
+  const sound = document.getElementById("clickSound");
 
-    function toggleDropdown(button) {
-      sound.currentTime = 0;
-      sound.play();
+  function toggleDropdown(button) {
+    sound.currentTime = 0;
+    sound.play();
 
-      document.querySelectorAll('.dropdown-content').forEach(drop => {
-        if (drop !== button.nextElementSibling) {
-          drop.classList.remove('show');
-        }
-      });
-
-      const dropdown = button.nextElementSibling;
-
-      if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-      } else {
-        dropdown.style.display = 'block';
-        setTimeout(() => {
-          dropdown.classList.add('show');
-        }, 10);
+    document.querySelectorAll('.dropdown-content').forEach(drop => {
+      if (drop !== button.nextElementSibling) {
+        drop.classList.remove('show');
       }
+    });
+
+    const dropdown = button.nextElementSibling;
+
+    if (dropdown.classList.contains('show')) {
+      dropdown.classList.remove('show');
+    } else {
+      dropdown.style.display = 'block';
+      setTimeout(() => {
+        dropdown.classList.add('show');
+      }, 10);
     }
+  }
 
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        document.querySelectorAll('.dropdown-content').forEach(drop => {
-          drop.classList.remove('show');
-        });
-      }
-    };
-  </script>
+  // إغلاق القوائم عند الضغط خارجها
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        drop.classList.remove('show');
+      });
+    }
+  };
+
+  // 🎯 التعامل مع الضغط مرتين على الأزرار
+  document.querySelectorAll('.dropbtn').forEach(button => {
+    button.addEventListener('dblclick', (e) => {
+      const bubble = document.createElement('div');
+      bubble.textContent = 'اهدأ اهدأ ';
+      bubble.style.position = 'absolute';
+      bubble.style.top = '-30px';
+      bubble.style.left = '50%';
+      bubble.style.transform = 'translateX(-50%)';
+      bubble.style.background = '#ff5e5e';
+      bubble.style.color = 'white';
+      bubble.style.padding = '5px 10px';
+      bubble.style.borderRadius = '10px';
+      bubble.style.fontSize = '14px';
+      bubble.style.opacity = '0';
+      bubble.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      bubble.style.zIndex = '1000';
+
+      button.style.position = 'relative';
+      button.appendChild(bubble);
+
+      // ظهور الفقاعة
+      setTimeout(() => {
+        bubble.style.opacity = '1';
+        bubble.style.transform = 'translateX(-50%) translateY(-10px)';
+      }, 10);
+
+      // اختفاء بعد ثانيتين
+      setTimeout(() => {
+        bubble.style.opacity = '0';
+        bubble.style.transform = 'translateX(-50%) translateY(-20px)';
+        setTimeout(() => {
+          bubble.remove();
+        }, 300);
+      }, 2000);
+    });
+  });
+
+  // تغيير لون h1 بعد شاشة الترحيب
+  setTimeout(() => {
+    document.querySelector("h1").style.color = "white";
+  }, 4000);
+</script>
+
 
 </body>
 </html>
