@@ -2,8 +2,33 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
-  <title>متجر T1</title>
+  <title>خاص </title>
   <style>
+    /* شاشة البداية */
+    #intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0e0e0e;
+      color: #bb86fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      font-family: 'Tahoma', sans-serif;
+      z-index: 9999;
+      opacity: 1;
+      animation: fadeOut 2.5s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
     body {
       background-color: #0e0e0e;
       color: #ffffff;
@@ -95,10 +120,13 @@
 </head>
 <body>
 
-  <h1>أهلاً فانزاتي 💜</h1>
+  <!-- شاشة ترحيب -->
+  <div id="intro">أهلاً فانزاتي 💜</div>
 
-  <!-- مشغل الصوت -->
+  <!-- صوت الضغط -->
   <audio id="clickSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_f7c8d1b66b.mp3" preload="auto"></audio>
+
+  <h1>أهلاً فانزاتي 💜</h1>
 
   <div class="button-container">
 
@@ -143,11 +171,9 @@
     const sound = document.getElementById("clickSound");
 
     function toggleDropdown(button) {
-      // تشغيل الصوت
       sound.currentTime = 0;
       sound.play();
 
-      // إغلاق باقي القوائم
       document.querySelectorAll('.dropdown-content').forEach(drop => {
         if (drop !== button.nextElementSibling) {
           drop.classList.remove('show');
@@ -166,7 +192,6 @@
       }
     }
 
-    // إغلاق القوائم إذا ضغطت برا
     window.onclick = function(event) {
       if (!event.target.matches('.dropbtn')) {
         document.querySelectorAll('.dropdown-content').forEach(drop => {
@@ -178,4 +203,3 @@
 
 </body>
 </html>
-
