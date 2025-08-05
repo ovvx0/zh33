@@ -145,7 +145,7 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn whatsapp" onclick="toggleDropdown(this)">📱 WhatsApp</button>
+      <button class="dropbtn whatsapp" onclick="toggleDropdown(this)"> WhatsApp</button>
       <div class="dropdown-content">
         <a href="https://wa.me/966XXXXXXXXX" target="_blank">راسلني على واتساب</a>
       </div>
@@ -159,7 +159,7 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn twitter" onclick="toggleDropdown(this)">🐦 Twitter</button>
+      <button class="dropbtn twitter" onclick="toggleDropdown(this)">X Twitter</button>
       <div class="dropdown-content">
         <a href="https://twitter.com/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
