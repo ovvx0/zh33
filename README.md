@@ -12,7 +12,7 @@
       width: 100%;
       height: 100%;
       background-color: #0e0e0e;
-      color: #bb86fc;
+      color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,7 +39,7 @@
     }
 
     h1 {
-      color: #bb86fc;
+      color: #ffffff;
       margin-bottom: 40px;
       font-size: 32px;
     }
@@ -126,7 +126,7 @@
   <!-- صوت الضغط -->
   <audio id="clickSound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_f7c8d1b66b.mp3" preload="auto"></audio>
 
- <h1>🎈أهلاً 🎈</h1>
+ <h1>🎈أهلاً </h1>
 
   <div class="button-container">
 
