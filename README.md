@@ -152,7 +152,7 @@
     </div>
 
     <div class="dropdown">
-      <button class="dropbtn telegram" onclick="toggleDropdown(this)">📨 Telegram</button>
+      <button class="dropbtn telegram" onclick="toggleDropdown(this)"> Telegram</button>
       <div class="dropdown-content">
         <a href="https://t.me/YourUsernameHere" target="_blank">@YourUsernameHere</a>
       </div>
