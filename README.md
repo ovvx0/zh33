@@ -67,8 +67,8 @@
       width: 220px;
     }
 
-    .instagram { background-color: #e1306c; }
-    .instagram:hover { background-color: #c92a5e; }
+    .instagram { background-color: #cb2be0; }
+    .instagram:hover { background-color: #c225c7; }
 
     .snapchat { background-color: #fffc00; color: #000; }
     .snapchat:hover { background-color: #e6e200; }
